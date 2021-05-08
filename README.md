@@ -1,3 +1,31 @@
+# BlueprintFlow - Fork of Wireflow.
+
+This is a fork of Wireflow with some additional features such as search at its current state. 
+
+The larger goal however is to generate configuration yaml files for: https://github.com/laravel-shift/blueprint
+
+For this to work there are some things that needs to be changed:
+-  Each category needs to map to a laravel feature:
+ -  Model
+ -  Migration
+ -  Seeder
+ -  Factory
+ -  Controller
+ -    Action
+ -    Resource
+ -  View
+ -    Component
+ -    Livewire
+ -  Command
+ -    Handler
+ 
+ And each category needs a set of input fields with defaults that should be displayed in the right column.
+ 
+__________________
+## Original readme below
+__________________
+
+
 # Wireflow - flow chart collaboration app
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/15abd946-68e7-4cdb-8d9e-4930d5a2191c/deploy-status)](https://app.netlify.com/sites/wireflow-app/deploys)
