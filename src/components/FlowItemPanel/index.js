@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { ItemPanel } from 'gg-editor';
-import { Card, Input } from 'antd/es';
+import React, { useState } from "react";
+import { ItemPanel } from "gg-editor";
+import { Card, Input } from "antd/es";
 import Select from "antd/es/select";
 import "antd/es/card/style/css";
 import "antd/es/select/style/css";

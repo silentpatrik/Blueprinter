@@ -34,8 +34,8 @@
     "react": "^16.13.1",
     "react-colorful": "^4.0.4",
     "react-dom": "^16.13.1",
+    "react-monaco-editor": "^0.43.0",
     "react-scripts": "3.4.1"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

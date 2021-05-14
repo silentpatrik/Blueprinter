@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Flow } from 'gg-editor';
-import './style.css';
+import React, { useState, useEffect } from "react";
+import { Flow } from "gg-editor";
+import "./style.css";
 
 const FlowCanvas = () => {
   const [edge, setEdge] = useState({});
@@ -12,10 +12,10 @@ const FlowCanvas = () => {
 
     if (!event?.item) {
       switch (EVENT_TYPE) {
-        case 'mouseleave':
+        case "mouseleave":
           setOnCanvas(true);
           break;
-        case 'mouseenter':
+        case "mouseenter":
           setOnCanvas(false);
           break;
         default:
@@ -25,7 +25,7 @@ const FlowCanvas = () => {
   };
 
   useEffect(() => {
-    if (edge.type === 'edge') {
+    if (edge.type === "edge") {
       oncanvas ? (edge.isSelected = false) : (edge.isSelected = true);
     }
   }, [oncanvas, edge]);
@@ -40,7 +40,7 @@ const FlowCanvas = () => {
       onBeforeItemUnselected={() => setEdge({})}
       onMouseEnter={mouseEvent}
       onMouseLeave={mouseEvent}
-      className='flow'
+      className="flow"
     />
   );
 };
