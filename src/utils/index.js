@@ -5,14 +5,12 @@ export const upperFirst = (str) =>
 
 export const categoriesList = [
   "All",
-  "Article",
-  "Blog",
-  "E-Commerce",
-  "Features",
-  "Gallery",
-  "Header",
-  "Misc",
-  "Multimedia",
-  "Sign In",
-  "Socials",
+  "Model",
+  "Controller",
+  "Model Factory",
+  "Form",
+  "Component",
+  "Action",
+  "Authenication",
+  "Layout ",
 ];
