@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { withPropsAPI } from "gg-editor";
 import Card from "antd/es/card";
@@ -32,6 +32,13 @@ const inlineFormItemLayout = {
 };
 
 class DetailForm extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      value: "Default value",
+    };
+  }
   get item() {
     const { propsAPI } = this.props;
     return propsAPI.getSelected()[0];
@@ -82,11 +89,13 @@ class DetailForm extends React.Component {
     );
 
     const editorDidMount = (editor, monaco) => {
-      console.log("editorDidMount", editor);
       editor.focus();
     };
     const onChange = (newValue, e) => {
-      console.log("onChange", newValue, e);
+      this.setState((curr) => ({
+        ...curr,
+        value: newValue,
+      }));
     };
     const options = {};
 
@@ -101,6 +110,7 @@ class DetailForm extends React.Component {
               height={500}
               options={options}
               onChange={onChange}
+              value={this.state.value}
               editorDidMount={editorDidMount}
             />
           </Item>

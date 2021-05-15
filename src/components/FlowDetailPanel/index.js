@@ -18,9 +18,8 @@ import "./style.css";
 const FlowDetailPanel = () => {
   return (
     <DetailPanel className="details">
-      <NodePanel>
-        <DetailForm type="node" />
-      </NodePanel>
+      <DetailForm type="node" />
+
       <EdgePanel>
         <DetailForm type="edge" />
       </EdgePanel>
